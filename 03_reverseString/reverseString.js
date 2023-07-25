@@ -1,4 +1,10 @@
-const reverseString = function() {
+const reverseString = function(word) {
+    const characters = word.split(/(?=.)/);
+
+    const reversedCharacters = characters.reverse();
+    const reversedString = reversedCharacters.join('');
+  
+    return reversedString;
 
 };
 
